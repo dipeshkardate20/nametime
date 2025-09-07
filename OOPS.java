@@ -8,11 +8,21 @@ public class OOPS{
         p1.settip(5);
 
         System.out.println(p1.tip);
+
+        Student s1 = new Student();
+
         
 
 
     }
 
+}
+
+class Student {
+
+    Student(){
+        System.out.println("This is the constructor....");
+    }
 }
 
 class Pen{
