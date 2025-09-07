@@ -35,10 +35,14 @@ public class OOPS{
         // s1.marks[1] = 80;
         // s1.marks[2] = 70;
 
-        Fish tuna = new Fish();
+        // Fish tuna = new Fish();
 
-        tuna.eats();
+        // tuna.eats();
 
+        Dog doggy = new Dog();
+        doggy.eats();
+        doggy.legs = 4;
+        System.out.println(doggy.legs);
 
 
 
@@ -54,7 +58,7 @@ class Animal{
     int teeth;
 
     void eats(){
-        System.out.println("Eats creture");
+        System.out.println("Eats FOOD");
     }
 
     void breath(){
@@ -62,13 +66,21 @@ class Animal{
     }
 }
 
-class Fish extends Animal{
-    int fings;
+class Mammel extends Animal{
+    int legs;
 
-    void swim(){
-        System.out.println("swims in water ");
-    }
 }
+
+class Dog extends Mammel{
+    String breed;
+}
+// class Fish extends Animal{
+//     int fings;
+
+//     void swim(){
+//         System.out.println("swims in water ");
+//     }
+// }
 
 class Student {
     String name ;
