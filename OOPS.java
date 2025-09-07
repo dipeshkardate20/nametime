@@ -39,10 +39,10 @@ public class OOPS{
 
         // tuna.eats();
 
-        Dog doggy = new Dog();
-        doggy.eats();
-        doggy.legs = 4;
-        System.out.println(doggy.legs);
+        // Dog doggy = new Dog();
+        // doggy.eats();
+        // doggy.legs = 4;
+        // System.out.println(doggy.legs);
 
 
 
@@ -67,13 +67,28 @@ class Animal{
 }
 
 class Mammel extends Animal{
-    int legs;
+    void walks(){
+        System.out.println("walks");
+    }
+
+}
+class Birds extends Animal{
+    void fly(){
+        System.out.println("Fly");
+    }
+
+}
+class fish extends Animal{
+    void swim(){
+        System.out.println("swims");
+    }
 
 }
 
-class Dog extends Mammel{
-    String breed;
-}
+
+// class Dog extends Mammel{
+//     String breed;
+// }
 // class Fish extends Animal{
 //     int fings;
 
