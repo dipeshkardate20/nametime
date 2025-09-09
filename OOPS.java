@@ -47,43 +47,115 @@ public class OOPS{
 
 
 
+        // Calculator calc = new Calculator(); 
+        // System.out.println(calc.sum(6,3));
+        // System.out.println(calc.sum((float)1.5,(float)5.5));
+        // System.out.println(calc.sum(2,4,5));
 
+        // Deer d = new Deer();
+        // d.eats();
 
+        // Horse h = new Horse();
+        // h.eats();
+        // h.walk();
+
+        // Chicken c = new Chicken();
+        // c.eats();
+        // c.walk();
+
+        
+        
 
     }
 
 }
 
-class Animal{
-    int teeth;
+abstract class Animal { 
+
+    void eats (){
+        System.out.println("Aniaml eats");
+    }
+
+     abstract void walk();
+}
+
+class Horse extends Animal{
+    void walk(){
+        System.out.println("walks on 4 legs ");
+    }
+
+
+}
+
+class Chicken extends Animal{
+    void walk(){
+        System.out.println("walks on 2 legs ");
+    }
+}
+class Aaanimal {
+    // method 
 
     void eats(){
-        System.out.println("Eats FOOD");
+        System.out.println("Eats anythings");
     }
 
-    void breath(){
-        System.out.println("breaths");
+
+}
+
+class Deer extends Aaanimal{
+    // methods
+    void eats(){
+        System.out.println("Eats Grass only ");
     }
 }
 
-class Mammel extends Animal{
-    void walks(){
-        System.out.println("walks");
+class Calculator{
+
+    int sum(int a , int b){
+        return a+b;
     }
 
-}
-class Birds extends Animal{
-    void fly(){
-        System.out.println("Fly");
+    float sum (float a , float b){
+        return a+b;
+
     }
 
-}
-class fish extends Animal{
-    void swim(){
-        System.out.println("swims");
-    }
+    int sum (int a , int b , int c){
+        return  a+b+c;
 
+    }
 }
+
+// class Aacnimal{
+//     int teeth;
+
+//     void eats(){
+//         System.out.println("Eats FOOD");
+//     }
+
+//     void breath(){
+//         System.out.println("breaths");
+//     }
+// }
+
+// class Mammel extends Animal{
+//     void walks(){
+//         System.out.println("walks");
+//     }
+
+// }
+// class Birds extends Animal{
+//     void fly(){
+//         System.out.println("Fly");
+//     }
+
+// }
+// class fish extends Animal{
+//     void swim(){
+//         System.out.println("swims");
+//     }
+
+// }
 
 
 // class Dog extends Mammel{
@@ -132,6 +204,9 @@ class Student {
     //  here the student is the constructor 
     
 }
+
+
+
 class student{
 
     String name ;
