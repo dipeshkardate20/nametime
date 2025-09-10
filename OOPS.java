@@ -63,11 +63,40 @@ public class OOPS{
         // c.eats();
         // c.walk();
 
-        
+        Queen q = new Queen();
+        q.moves(); 
+
         
 
     }
 
+}
+
+interface chessplayer{
+    void moves();
+
+}
+
+
+class Queen implements chessplayer{
+    public void moves(){
+        System.out.println("up,down,left,right,diagonal");
+
+
+    }
+}
+
+class Rook implements chessplayer{
+    public void moves(){
+        System.out.println("up,down,left,right");
+        
+    }
+}
+
+class King implements chessplayer{
+    public void moves(){
+        System.out.println("up,down,left,right,diagonal(by 1 moves )");
+    }
 }
 
 abstract class Animal { 
