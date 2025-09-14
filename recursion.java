@@ -7,12 +7,12 @@ public class recursion{
         int n = sc.nextInt(); 
         for (int i = n ; i>=0; i--){
             System.out.print(i + " " + ",");
-
+                // sadigsoivadv
             // commit ho ja 
 
 
 
-            
+
         } 
         // heloo 
     }
