@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class recursion{
+    public static void main(String [] args ){
+        Scanner sc = new Scanner(System.in);
+        
+        int n = sc.nextInt(); 
+        for (int i = n ; i>=0; i--){
+            System.out.print(i + " " + ",");
+                // sadigsoivadv
+            // commit ho ja 
+
+                // commit suicide 
+                // commit suicide 2 
+                // commit suicide 3
+                // commit suicide 4 
+
+
+        } 
+        // heloo 
+    }
+}
